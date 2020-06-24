@@ -1,10 +1,16 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import {Appbar} from 'react-native-paper';
 
 export default () => (
-  <View style={styles.container}>
-    <Text>Settings!</Text>
-  </View>
+  <>
+    <Appbar.Header>
+      <Appbar.Content title="Settings" subtitle={'Subtitle'} />
+    </Appbar.Header>
+    <View style={styles.container}>
+      <Text>Settings!</Text>
+    </View>
+  </>
 );
 
 const styles = StyleSheet.create({
